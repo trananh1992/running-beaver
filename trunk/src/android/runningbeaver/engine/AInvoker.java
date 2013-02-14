@@ -18,10 +18,12 @@ public abstract class AInvoker<T> implements IInvoker<T> {
 		return (ArrayList<T>) listenerList.clone();
 	}
 
+	@Override
 	public ArrayList<T> getListenerList() {
 		return (ArrayList<T>) listenerList.clone();
 	}
 
+	@Override
 	public abstract void run();
 
 }

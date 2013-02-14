@@ -5,6 +5,7 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.runningbeaver.commands.CHide;
 import android.runningbeaver.commands.IStopable;
+import android.runningbeaver.engine.ALayerInvoker;
 import android.runningbeaver.engine.DrawInvoker;
 import android.runningbeaver.engine.Duration;
 import android.runningbeaver.engine.Game;
@@ -32,8 +33,9 @@ public class Message implements IDrawable, IStopable {
 		canvas.drawText(text, position.getX(), position.getY(), paint);
 	}
 	
+	@Override
 	public void show() {
-		Game.getInstance().getDrawInvoker().register(this, DrawInvoker.HIGH);
+		Game.getInstance().getDrawInvoker().register(this, ALayerInvoker.HIGH);
 	}
 
 	@Override

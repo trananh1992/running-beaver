@@ -304,6 +304,7 @@ public final class Game {
 		/**
 		 * magic game thread
 		 */
+		@Override
 		public void run() {
 			
 			for (;;) {
@@ -387,7 +388,7 @@ public final class Game {
 			// init score board
 			new ScoreBoard(new MScoreBoard(),
 					new Position(device.getScreenWidth() - 220, 10),
-					DrawInvoker.HIGH);
+					ALayerInvoker.HIGH);
 			
 			// init skillbar
 			skillbar = new Skillbar(new Position(Config.skill.posX, Config.skill.posY));
@@ -396,7 +397,7 @@ public final class Game {
 			background = new Background(BitmapImage.load(Config.game.defaultBackground));
 			
 			// init player
-			player = new Player(DrawInvoker.LOW);
+			player = new Player(ALayerInvoker.LOW);
 			
 			// set defaults
 			gameStatistic.addLifes(Config.player.lifes);
@@ -460,7 +461,7 @@ public final class Game {
 		}
 
 		private int getNumberPerSpawnByLevel(int level) {
-			return (int) Config.meteor.numberPerSpawn * (level / 4)
+			return Config.meteor.numberPerSpawn * (level / 4)
 					+ Config.meteor.numberPerSpawn;
 		}
 
@@ -472,7 +473,7 @@ public final class Game {
 		 */
 		private void createNewMeteor() {
 			new Meteor(getRandomMeteorPosition(), getRandomDirection(),
-					DrawInvoker.LOW);
+					ALayerInvoker.LOW);
 		}
 
 		/**
@@ -480,14 +481,14 @@ public final class Game {
 		 */
 		private void createNewMoney() {
 			new Money(getRadomBoniPosition(Config.boni.money.spawnHeight),
-					new Direction(0.0, 0.0), DrawInvoker.LOW);
+					new Direction(0.0, 0.0), ALayerInvoker.LOW);
 		} 
 		
 		/**
 		 * Creates a new life-boni with random position & 0 direction
 		 */
 		private void createNewLife() {
-			new Life(getRadomBoniPosition(Config.boni.heart.spawnHeight), new Direction(0.0, 0.0), DrawInvoker.LOW);
+			new Life(getRadomBoniPosition(Config.boni.heart.spawnHeight), new Direction(0.0, 0.0), ALayerInvoker.LOW);
 		}
 
 		/**

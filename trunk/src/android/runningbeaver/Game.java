@@ -1,13 +1,10 @@
 package android.runningbeaver;
 
-import android.runningbeaver.engine.GameLogic;
 import android.app.Activity;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.os.Bundle;
-import android.runningbeaver.R;
-import android.view.ContextMenu;
-import android.view.ContextMenu.ContextMenuInfo;
+import android.runningbeaver.engine.GameLogic;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.View;

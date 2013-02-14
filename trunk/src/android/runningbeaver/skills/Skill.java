@@ -8,6 +8,7 @@ import android.runningbeaver.engine.Duration;
 import android.runningbeaver.engine.Game;
 import android.runningbeaver.menu.CenterMessage;
 import android.runningbeaver.menu.Countdown;
+import android.runningbeaver.menu.Message;
 import android.runningbeaver.models.AModel;
 import android.runningbeaver.objects.AAppearance;
 import android.runningbeaver.objects.ITouchable;
@@ -23,7 +24,7 @@ public abstract class Skill extends AAppearance implements ITouchable, ISkill, I
 	protected boolean active = false;
 
 	public Skill(AModel model, Position position) {
-		super(model, position, DrawInvoker.HIGH);
+		super(model, position, ALayerInvoker.HIGH);
 		hide();
 	}
 
@@ -46,7 +47,7 @@ public abstract class Skill extends AAppearance implements ITouchable, ISkill, I
 		show();
 		
 		// new SkillMessage
-		new CenterMessage("NEW SKILL", CenterMessage.defaultPaint(), Duration.NORMAL);
+		new CenterMessage("NEW SKILL", Message.defaultPaint(), Duration.NORMAL);
 	}
 	
 	@Override
@@ -63,7 +64,7 @@ public abstract class Skill extends AAppearance implements ITouchable, ISkill, I
 			
 			// init countdown with stop command
 			Position cPosition = new Position(position.getX() + 5, position.getY() + 80);
-			new Countdown(cPosition, Countdown.defaultPaint(), DrawInvoker.HIGH, duration).addCommando(new CStop(this));
+			new Countdown(cPosition, Countdown.defaultPaint(), ALayerInvoker.HIGH, duration).addCommando(new CStop(this));
 		}
 	}
 	

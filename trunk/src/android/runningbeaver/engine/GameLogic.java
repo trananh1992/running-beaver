@@ -1,12 +1,9 @@
 package android.runningbeaver.engine;
 
 import java.util.ArrayList;
-import java.util.HashMap;
-import android.runningbeaver.objects.AAppearance;
 
 import android.content.Context;
 import android.graphics.Canvas;
-
 import android.runningbeaver.objects.AAppearance;
 
 public final class GameLogic {
@@ -21,7 +18,7 @@ public final class GameLogic {
 	
 	private GameLogic(Context context) {
 		super();
-		this.context = context;
+		GameLogic.context = context;
 	}
 	
 	public static void initialize(Context context) {

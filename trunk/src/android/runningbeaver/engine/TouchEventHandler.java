@@ -44,24 +44,24 @@ public class TouchEventHandler {
 		int halfHeight = Game.getInstance().getDevice().getScreenHeight() / 2;
 		
 		// TOP LEFT
-		TouchObject topLeft = new TouchObject(new Surface(0, 0, halfWidth, halfHeight), TouchInvoker.LOW);
+		TouchObject topLeft = new TouchObject(new Surface(0, 0, halfWidth, halfHeight), ALayerInvoker.LOW);
 		
 		topLeft.addCommando(new CPlayerLeft());
 		topLeft.addCommando(new CPlayerJump());
 		
 		// TOP RIGHT
-		TouchObject topRight = new TouchObject(new Surface(halfWidth, 0, halfWidth, halfHeight), TouchInvoker.LOW);
+		TouchObject topRight = new TouchObject(new Surface(halfWidth, 0, halfWidth, halfHeight), ALayerInvoker.LOW);
 		
 		topRight.addCommando(new CPlayerRight());
 		topRight.addCommando(new CPlayerJump());
 		
 		// BOTTOM LEFT
-		TouchObject bottomLeft = new TouchObject(new Surface(0, halfHeight, halfWidth, halfHeight), TouchInvoker.LOW);
+		TouchObject bottomLeft = new TouchObject(new Surface(0, halfHeight, halfWidth, halfHeight), ALayerInvoker.LOW);
 		
 		bottomLeft.addCommando(new CPlayerLeft());
 		
 		// BOTTOM RIGHT
-		TouchObject bottomRight = new TouchObject(new Surface(halfWidth, halfHeight, halfWidth, halfHeight), TouchInvoker.LOW);
+		TouchObject bottomRight = new TouchObject(new Surface(halfWidth, halfHeight, halfWidth, halfHeight), ALayerInvoker.LOW);
 		
 		bottomRight.addCommando(new CPlayerRight());
 

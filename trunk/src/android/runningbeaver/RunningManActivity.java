@@ -3,9 +3,6 @@ package android.runningbeaver;
 import android.app.TabActivity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.preference.PreferenceActivity;
-import android.runningbeaver.R;
-import android.runningbeaver.R.layout;
 import android.widget.TabHost;
 import android.widget.TabHost.TabSpec;
 

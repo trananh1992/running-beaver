@@ -19,10 +19,12 @@ public class BitmapImage implements IImage {
 		canvas.drawBitmap(bitmap, position.getX(), position.getY(), null);
 	}
 
+	@Override
 	public int getWidth() {
 		return bitmap.getWidth();
 	}
 
+	@Override
 	public int getHeight() {
 		return bitmap.getHeight();
 	}

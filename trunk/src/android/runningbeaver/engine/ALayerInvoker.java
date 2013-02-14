@@ -52,7 +52,7 @@ public abstract class ALayerInvoker<T> implements IInvoker {
 		arrayList.addAll((Collection<? extends IDrawable>) listenerListNormal);
 		arrayList.addAll((Collection<? extends IDrawable>) listenerListHigh);
 		
-		return (ArrayList<T>) arrayList;
+		return arrayList;
 	}
 
 }

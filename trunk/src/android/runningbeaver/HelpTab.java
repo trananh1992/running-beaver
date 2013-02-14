@@ -12,6 +12,7 @@ import android.widget.TextView;
 
 public class HelpTab extends ListActivity {
 
+	@Override
 	public void onCreate(Bundle icicle) {
 		super.onCreate(icicle);
 
@@ -20,6 +21,7 @@ public class HelpTab extends ListActivity {
 		ListView lv = getListView();
 		lv.setTextFilterEnabled(true);
 		lv.setOnItemClickListener(new OnItemClickListener() {
+			@Override
 			public void onItemClick(AdapterView<?> parent, View view,
 					int position, long id) {
 				// When clicked, show a toast with the TextView text
