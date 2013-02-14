@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="android.runningbeaver"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        <activity
+            android:label="@string/app_name"
+            android:name=".RunningBeaverActivity" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".anleitung" ></activity>
+        <activity android:name=".credits" ></activity>
+        <activity android:name=".CreditsTab" ></activity>
+        <activity
+            android:name=".GameActivity"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity android:name=".GameTab" ></activity>
+        <activity android:name=".HelpTab" ></activity>
+        <activity android:name=".RunningManActivity" ></activity>
+        <activity android:name=".SettingsTab" ></activity>
+    </application>
+
+</manifest>
