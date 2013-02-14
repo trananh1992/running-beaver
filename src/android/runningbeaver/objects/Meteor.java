@@ -43,6 +43,7 @@ public final class Meteor extends ABlock implements IExplosionAnimation {
 				position.getY() + getDirection().getDyFloat());
 	}
 
+	@Override
 	public void startExplosionAnimation() {
 
 		// start animation

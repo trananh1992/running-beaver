@@ -19,10 +19,12 @@ public class TouchObject implements ITouchable, ICommandList {
 		touchable();
 	}
 	
+	@Override
 	public void addCommando(ICommand command) {
 		commands.add(command);
 	}
 	
+	@Override
 	public void removeCommando(ICommand command) {
 		commands.remove(command);
 	}

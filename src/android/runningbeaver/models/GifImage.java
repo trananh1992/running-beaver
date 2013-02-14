@@ -27,10 +27,12 @@ public class GifImage implements IImage {
 		movie.draw(canvas, position.getX(), position.getY());
 	}
 
+	@Override
 	public int getWidth() {
 		return movie.width();
 	}
 
+	@Override
 	public int getHeight() {
 		return movie.height();
 	}

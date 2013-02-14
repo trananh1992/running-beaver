@@ -7,6 +7,7 @@ public class DirectionInvoker extends AInvoker<IMoveable> {
 	/**
 	 * move moveObjects by direction
 	 */
+	@Override
 	public void run() {
 
 		// iterate listenerList to move all moveObjects
