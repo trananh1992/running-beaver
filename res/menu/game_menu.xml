@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:title="Musik an/aus" android:id="@+id/game_menu_music" />
+	<item android:title="Effekte an/aus" android:id="@+id/game_menu_effects" />
+	<item android:title="Feedback an/aus" android:id="@+id/game_menu_fededback" />
+	<item android:title="speichern" android:id="@+id/game_menu_save" />
+	<item android:title="beenden" android:id="@+id/game_menu_exit">
+		<menu>
+			<item android:title="speichern" android:id="@+id/game_menu_exit_save" />
+			<item android:title="nicht speichern" android:id="@+id/game_menu_exit_dontsave" />
+		</menu>
+	</item>
+</menu>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="Anleitung">Jeder kennt die apokalyptischen Vorhersagen, wie die Welt untergehen wird! Doch stellt euch vor es passiert wirklich und Meteoriten prasseln wie Regen auf euch herunter.
+	    					Die Welt geht unter und ihr könnt nichts dagegen unternehmen? Oder vielleicht doch? In diesem rasanten Spiel lauft ihr als kleiner verängstigter Bieber durch die, im Laufe verwüstete, Landschaft
+	    					 und müsst euch einen Weg durch Meteoritenhagel bahnen, um zu überleben. Oder ihr seid ein ehrwürdiger und mutiger Held, der versucht die Meteoriten zu zerstören, um die Welt zu retten. 
+	    					 Durch Tippen auf den Screen am linken oder rechten Rand lauft Ihr in die entsprechende Richtung. Durch Tippen der Mitte des Screen könnt ihr springen. 
+	    					 Bei Sensorensteuerung müsst ihr das Handy/Tablet nach Links oder Rechts neigen, um zu laufen oder kurz schütteln, um zu springen.
+	    					 Normaler-Modus
+	    					 Durch einsammeln der Baumstümpfe, die im Laufe des Spiels erscheinen, könnt ihr Extra-Leben erhalten, um der Apokalypse zu entgehen.
+	    					 Ab jedem hundertsten Punkt gibt es übrigens auch ein Leben, also haltet durch!
+	    					 Werdet ihr von einem Meteoriten getroffen, verliert ihr ein Leben. Bei 0 leben seid ihr der Apokalypse erlegen und es ist vorbei.
+	    					 Hero-Modus
+	    					 Wie im Normalem-Modus erhaltet Ihr leben, doch verliert Ihr eins, sobald es ein Meteorit geschafft hat, auf der Erde einzuschlagen. 
+	    					 </string>
+	<string name="app_name">RunningBeaver</string>
+	<string name="credits">Diser apokalyptische Wahnsinn wurde im Programmierkurs, an der Wirtschaftsakademie Kiel, von den WInfern Marius Magraf, Matthias Fischer und Tom Philipp Möller, aus dem 110er Jahrgang kreiert.
+	    					Marius war für das Grafiken und die Sounds zuständig.
+	    					Matthias war für die Umsetzung der Android Menüs und Einstellungen zuständig.
+	    					Tom hat das SpielDesign angefertigt und umgesetzt.
+	</string>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:title="Settings"
+>
+	<PreferenceCategory android:title="Sound:">
+		<CheckBoxPreference
+			android:key="@+id/chk_sound_music"
+			android:title="Musik an?"
+			android:defaultValue="true"
+		></CheckBoxPreference>
+		<CheckBoxPreference
+			android:key="@+id/chk_sound_effects"
+			android:title="Soundeffekte an?"
+			android:defaultValue="true"
+		></CheckBoxPreference>
+	</PreferenceCategory>
+	<PreferenceCategory android:title="Steuerung">
+		<ListPreference
+			android:key="controls"
+			android:title="Steuerung wählen"
+			android:entries="@array/Controls"
+			android:entryValues="@array/Controls_values" android:defaultValue="1"/>
+	</PreferenceCategory>
+	<PreferenceCategory android:title="Feedback:">
+		<CheckBoxPreference
+			android:key="@+id/chk_feedback"
+			android:title="Feedback an?"
+			android:defaultValue="true"
+		></CheckBoxPreference>
+	</PreferenceCategory>
+</PreferenceScreen>
